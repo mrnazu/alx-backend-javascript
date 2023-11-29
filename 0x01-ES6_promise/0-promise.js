@@ -9,3 +9,7 @@ function getResponseFromAPI(){
 		}
 	});
 }
+
+getResponseFormatAPI.then(function(msg){
+	console.log(msg)
+})
