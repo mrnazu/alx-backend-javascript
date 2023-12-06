@@ -88,3 +88,35 @@ console.log(executeWork(teacherEmployee));
 const directorEmployee = createEmployee(1000);
 
 console.log(executeWork(directorEmployee));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  } else if (todayClass === 'History') {
+    return 'Teaching History';
+  } else {
+    return 'Unknown subject';
+  }
+}
+
+console.log(teachClass('Math'));     
+console.log(teachClass('History'));
