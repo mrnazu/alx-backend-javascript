@@ -31,3 +31,18 @@ const dir1: Directos = {
 };
 
 console.log(dir1);
+
+
+
+interface printTeacherFunction {
+	(fisrtName: string, lastName: string): string;
+};
+
+const printTeacher: PrintTeacherFunction = (fisrName, lastName) => {
+	const firstLetter = firstName.charAt(0).toUpperCase();
+	const fullLastName = lastName.charAt(0).toUpperCase() + lastName.slice(1);
+	return `${firstLetter}. ${fullLastName}`
+};
+
+const result: string = printTeacher("Samuel", "Amsalu");
+console.log(result);
