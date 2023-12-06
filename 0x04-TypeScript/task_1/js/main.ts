@@ -8,12 +8,26 @@ type Teacher = {
 };
 
 
-const teacher3: Teacher = {
-  firstName: 'John',
+const teacher1: Teacher = {
+  firstName: 'Samuel',
   fullTimeEmployee: false,
-  lastName: 'Doe',
-  location: 'London',
+  lastName: 'Amsalu',
+  location: 'Oromia',
   contract: false, // Additional attribute
 };
 
-consolo.log(teacher3);
+console.log(teacher1);
+
+interface Directors extends Teacher {
+	numberOfReports: number;
+}
+
+const dir1: Directos = {
+	firstName: 'John',
+	lastName: 'Doe',
+	location: 'London',
+	fullTimeEmployee: true,
+	numberOfReports: 17,
+};
+
+console.log(dir1);
