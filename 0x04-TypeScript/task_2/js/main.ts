@@ -50,3 +50,41 @@ console.log(createEmployee(200));
 console.log(createEmployee(1000));  
 console.log(createEmployee('$500'));
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+type Employee = Director | Teacher;
+
+function isDirector(employee: Employee): employee is Director {
+  return (employee as Director).workDirectorTasks !== undefined;
+}
+
+function executeWork(employee: Employee): string {
+  if (isDirector(employee)) {
+    return employee.workDirectorTasks();
+  } else {
+    return employee.workTeacherTasks();
+  }
+}
+
+const teacherEmployee = createEmployee(200);
+console.log(executeWork(teacherEmployee)); 
+const directorEmployee = createEmployee(1000);
+
+console.log(executeWork(directorEmployee));
