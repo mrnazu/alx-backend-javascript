@@ -1,8 +1,2 @@
-// 0-console.js
-
-function displayMessage(message) {
-    console.log(message);
-  }
-  
-displayMessage("Hello, nazu!");
+const displayMessage = (aString) => console.log(aString);
 module.exports = displayMessage;
